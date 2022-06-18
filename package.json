@@ -2,7 +2,7 @@
   "name": "languageio-frontend",
   "private": true,
   "authors": [
-    "cihatsalik1@gmail.com",
+    "cihatsalik1@gmail.com"
   ],
   "scripts": {
     "dev": "next dev",

@@ -1,13 +1,13 @@
-import { Button } from "components/button";
-import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
-import { Container } from "@chakra-ui/react";
-import { Header } from "components/Header";
+import { Button } from 'components/button';
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import { Container } from '@chakra-ui/react';
+import Header from 'components/Header';
+import Landing from 'components/Landing';
 
 const Home: NextPage = () => {
   return (
-    <Container maxW="container.xl">
+    <Container fixed maxW="container.xxl" centerContent={true} padding={'0px'}>
       <Head>
         <title>Create Next App</title>
         <meta
@@ -18,12 +18,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <Image
-        src="/images/landing/logo.png"
-        alt="LanguageIO"
-        width={200}
-        height={200}
-      />
+      <Landing />
     </Container>
   );
 };

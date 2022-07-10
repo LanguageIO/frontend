@@ -6,6 +6,8 @@ import { extendTheme } from "@chakra-ui/react";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { createBreakpoints } from "@chakra-ui/theme-tools";
 import { deepmerge } from "@mui/utils";
+import Header from 'components/Header/HeaderV2';
+import Footer from 'components/Footer';
 
 const muiTheme = createTheme({
   palette: {
@@ -123,7 +125,9 @@ function App({ Component, pageProps }: AppProps) {
       <Head>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
+      <Header />
       <Component {...pageProps} />;
+      <Footer />
     </ChakraProvider>
   );
 }

@@ -3,15 +3,16 @@ import React from 'react';
 import Lottie from 'react-lottie';
 import animationData from 'lotties/hello-bonjour-hola-guten-tag.json';
 import { Box, Typography } from '@mui/material';
+import type { ReactNode } from 'react';
 
-const AnimationHero: NextPage = () => {
+const AnimationHero: NextPage = (props: ReactNode) => {
   const defaultOptions = {
     loop: true,
     autoplay: true,
-    animationData: animationData,
+    animationData,
     rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice',
-    },
+      preserveAspectRatio: 'xMidYMid slice'
+    }
   };
 
   return (

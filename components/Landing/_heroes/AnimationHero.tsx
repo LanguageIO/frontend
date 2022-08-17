@@ -1,7 +1,7 @@
 import { NextPage } from 'next';
 import React from 'react';
 import Lottie from 'react-lottie';
-import animationData from 'lotties/hello-bonjour-hola-guten-tag.json';
+import animationData from '../../../public/lotties/hello-bonjour-hola-guten-tag.json';
 import { Box, Typography } from '@mui/material';
 import type { ReactNode } from 'react';
 

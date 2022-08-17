@@ -9,7 +9,7 @@ import {
   IconProps,
 } from '@chakra-ui/react';
 import Lottie from 'react-lottie';
-import animationData from 'lotties/hello-bonjour-hola-guten-tag.json';
+import animationData from '../../../public/lotties/hello-bonjour-hola-guten-tag.json';
 
 export default function CallToActionWithIllustration() {
   return (

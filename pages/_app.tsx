@@ -119,7 +119,7 @@ const chakraTheme = extendTheme({
 
 const theme = deepmerge(chakraTheme, muiTheme);
 
-function App({ Component, pageProps }: AppProps) {
+function App({ Component , pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
       <Head>

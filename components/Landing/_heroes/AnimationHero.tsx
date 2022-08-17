@@ -1,11 +1,10 @@
-import { NextPage } from 'next';
 import React from 'react';
 import Lottie from 'react-lottie';
 import animationData from '../../../public/lotties/hello-bonjour-hola-guten-tag.json';
 import { Box, Typography } from '@mui/material';
 import type { ReactNode } from 'react';
 
-const AnimationHero: NextPage = (props: ReactNode) => {
+const AnimationHero = (props: ReactNode) => {
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -61,6 +60,7 @@ const AnimationHero: NextPage = (props: ReactNode) => {
         ipsum dolor sit amet consectetur adipisicing elit. In, officia!
       </Typography>
       <Box mt={20} mb={20} mr={0} ml={0}>
+        {/* @ts-ignore */}
         <Lottie options={defaultOptions} height={400} width={400} />
       </Box>
     </Box>

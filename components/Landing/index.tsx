@@ -1,7 +1,7 @@
 import { NextPage } from 'next';
 import React from 'react';
 import Image from 'next/image';
-import { Box, Container, Grid, Typography } from '@mui/material';
+import { Box } from '@mui/material';
 import LandingHero from './_heroes/LandingHero';
 import AnimationHero from './_heroes/AnimationHero';
 import CallToActionWithIllustration from './_heroes/CTAWithIllustration';
@@ -11,7 +11,7 @@ import SplitScreenWithImage from './_heroes/SplitScreenWithImage';
 import WithBackgroundImageAndGradient from './_heroes/WithBackgroundImageAndGradient';
 import SimpleThreeColumnGrid from './_heroes/SimpleThreeColumnGrid';
 
-const Landing: NextPage = () => {
+const Landing = () => {
   return (
     <Box>
       <CallToActionWithIllustration />

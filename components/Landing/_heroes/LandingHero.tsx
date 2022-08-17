@@ -3,7 +3,7 @@ import { NextPage } from 'next';
 import Image from 'next/image';
 import React from 'react';
 
-const LandingHero: NextPage = () => {
+const LandingHero = () => {
   return (
     <Box
       padding={'0px'}

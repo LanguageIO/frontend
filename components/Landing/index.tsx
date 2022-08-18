@@ -1,5 +1,7 @@
 import { NextPage } from 'next';
-import React from 'react';
+import React, {useEffect} from 'react';
+import smoothscroll from 'smoothscroll-polyfill';
+
 import Image from 'next/image';
 import { Box } from '@mui/material';
 import LandingHero from './_heroes/LandingHero';
@@ -12,6 +14,7 @@ import WithBackgroundImageAndGradient from './_heroes/WithBackgroundImageAndGrad
 import SimpleThreeColumnGrid from './_heroes/SimpleThreeColumnGrid';
 
 const Landing = () => {
+  useEffect(() => smoothscroll.polyfill(), [])  
   return (
     <Box>
       <CallToActionWithIllustration />
